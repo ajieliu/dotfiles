@@ -117,19 +117,11 @@ export PATH=$PATH:/usr/local/sbin:$HOME/cmd
 # node
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
-# aliases
-alias proxy='export http_proxy=http://localhost:1087 && export https_proxy=$http_proxy && export no_proxy="127.0.0.1/8,localhost,192.168.0.0/16"'
-alias unproxy='unset http_proxy && unset https_proxy && unset no_proxy'
-
-alias brew-upgrade='brew update && brew upgrade && brew upgrade --cask && brew cleanup'
-alias reshell='exec -l $SHELL'
-alias smtr='sudo mtr'
-alias svim='sudo vim'
-alias git-branch-clean="git remote prune origin && git branch -vv | grep -E '丢失|gone' | awk '{print \$1}' | xargs git branch -d"
-
-alias router-main-proxy='sudo ssh -NL 80:192.168.1.1:80 liujie@home.eirture.cn -p 5001 -i /Users/liujie/.ssh/id_rsa'
-alias router-mi-proxy='sudo ssh -NL 80:192.168.31.1:80 -F /Users/liujie/.ssh/config lenovo'
-
 # completion
 # source <(pip completion --zsh)
+
+# alias
+if [[ -a ~/.alias ]]; then
+  source ~/.alias
+fi
 
