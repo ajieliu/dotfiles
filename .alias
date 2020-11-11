@@ -1,0 +1,22 @@
+
+alias realias='source ~/.alias'
+
+# basic
+alias brew-upgrade='brew update && brew upgrade && brew upgrade --cask && brew cleanup'
+alias proxy='export http_proxy=http://localhost:1087 && export https_proxy=http://localhost:1087 && export no_proxy="127.0.0.1/8, localhost, 192.168.0.0/16"'
+alias unproxy='unset http_proxy && unset https_proxy && unset no_proxy'
+
+alias smtr='sudo mtr'
+alias svim='sudo vim'
+
+# git
+alias git-branch-clean="git remote prune origin && git branch -vv | grep -E '丢失|gone' | awk '{print \$1}' | xargs git branch -d"
+
+# mysql
+
+# portforward
+alias pf-mysql-onduty='kubectl port-forward svc/mysql 3306:3306 -n onduty'
+
+
+# mongodb
+
