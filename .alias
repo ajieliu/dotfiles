@@ -20,3 +20,10 @@ alias pf-mysql-onduty='kubectl port-forward svc/mysql 3306:3306 -n onduty'
 
 # mongodb
 
+# docker
+alias deti='docker exec -t -i'
+alias drti='docker run -t -i'
+alias drtirm='docker run -t -i --rm'
+alias dl='docker logs'
+alias dlf='docker logs -f'
+
