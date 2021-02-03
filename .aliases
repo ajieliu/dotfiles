@@ -1,5 +1,5 @@
 
-alias realias='source ~/.alias'
+alias realias='source ~/.aliases'
 
 # basic
 alias brew-upgrade='brew update && brew upgrade && brew upgrade --cask && brew cleanup'

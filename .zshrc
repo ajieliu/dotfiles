@@ -121,7 +121,7 @@ export PATH="/usr/local/opt/node@12/bin:$PATH"
 # source <(pip completion --zsh)
 
 # alias
-if [[ -a ~/.alias ]]; then
-  source ~/.alias
+if [[ -a ~/.aliases ]]; then
+  source ~/.aliases
 fi
 
